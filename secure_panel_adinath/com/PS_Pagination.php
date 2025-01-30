@@ -25,10 +25,10 @@ class PS_Pagination {
 		  public function __construct(){
   $this->host = "localhost";
 
-		  $this->user = "tenac4dh_pgauser";
+		  $this->user = "root";
 
-		  $this->pass = '$lRP$~gH+~F4';
-		  $this->database = "tenac4dh_adinath";
+		  $this->pass = '+paJONT.c6iv';
+		  $this->database = "aftech";
 		  
 		  $conn=$this->conn = mysqli_connect( $this->host,$this->user,$this->pass,$this->database ) or die( "<center><span style='color:red; font-weight:bold'>Database Error !!!</span></center>" );
 		  
