@@ -23,12 +23,11 @@ class PS_Pagination {
 	 * @param string $append Parameters to be appended to pagination links 
 	 */
 		  public function __construct(){
-  $this->host = "localhost";
+ 		 $this->host = "localhost";
 
 		  $this->user = "root";
-
-		  $this->pass = '+paJONT.c6iv';
-		  $this->database = "aftech";
+		  $this->pass = '$lRP$~gH+~F4';
+		  $this->database = "tenac4dh_adinath";
 		  
 		  $conn=$this->conn = mysqli_connect( $this->host,$this->user,$this->pass,$this->database ) or die( "<center><span style='color:red; font-weight:bold'>Database Error !!!</span></center>" );
 		  
