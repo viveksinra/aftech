@@ -16,7 +16,7 @@
 		  $this->user = "root";
 
 		  $this->pass = '$lRP$~gH+~F4';
-		  $this->database = "tenac4dh_adinath";
+		  $this->database = "aftech_db";
 		  
 		 $conn=$this->conn = mysqli_connect( $this->host,$this->user,$this->pass,$this->database) or die( "<center><span style='color:red; !!!</span></center>" );
 		  
