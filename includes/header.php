@@ -38,13 +38,14 @@
 
             <ul>
 <?php $sell=$db->fetchAssoc($db->fireQuery("select * from product where `category`='".$cat[$h]['id']."' order by id desc "));
+if(!empty($sell)){
 for($j=0;$j<count($sell);$j++){?>
               <li>
 
                 <a href="services.php?action=detail&id=<?php echo $sell[$j]['id'];?>"><?php echo $sell[$j]['name'];?></a>
 
               </li>
-<?php } ?>
+<?php }} ?>
          </ul>
 
           </li>
