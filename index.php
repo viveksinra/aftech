@@ -469,7 +469,7 @@ for($j=0;$j<count($sell);$j++){?>
 
 <?php $arr=array('blue','orange','green','red','purple','pink');?>
 <?php $sell=$db->fetchAssoc($db->fireQuery("select * from product order by RAND() limit 0,6"));
-for($j=0;$j<count($sell);$j++){?>  
+if(!empty($sell)){for($j=0;$j<count($sell);$j++){?>  
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
 
             <div class="service-box <?php echo $arr[$j];?>">
@@ -487,7 +487,7 @@ for($j=0;$j<count($sell);$j++){?>
           </div>
 
 
-<?php } ?>
+<?php }} ?>
         </div>
 
 
